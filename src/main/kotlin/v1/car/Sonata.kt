@@ -2,7 +2,7 @@ package v1.car
 
 class Sonata(
     private val inputFee: Int
-) : Car() {
+) : Car {
 
     override fun getDistancePerLiter(): Double = 10.0
 

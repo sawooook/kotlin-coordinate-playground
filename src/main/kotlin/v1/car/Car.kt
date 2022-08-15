@@ -1,15 +1,15 @@
 package v1.car
 
-abstract class Car {
+interface Car {
 
     // 리터당 이동 거리. 연비
-    abstract fun getDistancePerLiter(): Double;
+    fun getDistancePerLiter(): Double;
 
     // 여행 하려는 거리
-    abstract fun getTripDistance(): Double;
+    fun getTripDistance(): Double;
 
     // 차종의 이름
-    abstract fun getName(): String;
+    fun getName(): String;
 
     // 주입해야할 연료량
     fun getChargeQuantity(): Double = getTripDistance() / getDistancePerLiter()

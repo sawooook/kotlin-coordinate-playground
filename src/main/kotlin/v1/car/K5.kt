@@ -2,7 +2,7 @@ package v1.car
 
 class K5(
     private val inputFee: Int
-) : Car() {
+) : Car {
 
     override fun getDistancePerLiter(): Double = 13.0
 
